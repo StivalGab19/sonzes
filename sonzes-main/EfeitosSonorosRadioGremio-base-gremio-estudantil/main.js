@@ -1,6 +1,11 @@
-function tocasomvaca(){
-    document.querySelector("som_tecla_vaca").play();
+function tocaSomVaca(){
+    document.querySelector("#som_tecla_vaca").play();
 }
 const listadeTeclas = document.querySelectorAll(".tecla");
 
-listadeTeclas[2].onlick = tocasomvaca;
+let contador = 0;
+while(contador < 9 ){
+    listadeTeclas[contador].onclick = tocaSomVaca;
+    contador = contador + 1;
+    console.log(contador);
+}
